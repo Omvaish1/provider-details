@@ -9,8 +9,7 @@ export function ReviewCard() {
         </div>
         <p id="content">
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.it to make a type specimen book. It has survived not only
-          five centuries
+          industry.
         </p>
       </div>
     </div>

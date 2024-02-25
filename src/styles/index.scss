@@ -284,7 +284,27 @@ h3 {
   display: flex;
   margin: 2rem;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+}
+.card-holder {
+  margin-bottom: 1rem;
+  overflow-y: scroll;
+  height: 80%;
+}
+.card-holder::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+.card-holder::-webkit-scrollbar-track {
+  background: white;
+  border-left: 1px solid rgba(128, 128, 128, 0.15);
+}
+
+.card-holder::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 5rem;
+}
+.card-holder::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 166, 0, 0.577);
 }
 #content {
   font-size: 1.7rem;
@@ -301,7 +321,8 @@ h3 {
   justify-content: flex-end;
   margin-right: 4rem;
   margin-bottom: 4rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
+  // position: fixed;
 }
 .button button {
   background: linear-gradient(to right, rgb(155, 21, 21), rgb(222, 114, 132));
