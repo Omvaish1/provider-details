@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 2.4rem;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+}
+.header {
+  display: flex;
+  height: 8vh;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 3rem;
+}
+.logo {
+  margin-left: 3rem;
+  margin-right: 10rem;
+  height: 3.7rem;
+}
+.heading-text {
+  font-size: 2rem;
+  margin-right: 7rem;
+  font-weight: 500;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  margin-right: 4rem;
+  width: 70rem;
+  box-shadow: 0px 0px 10px 4px rgba(128, 128, 128, 0.15);
+  border-radius: 2rem;
+}
+.search-input::placeholder {
+  font-size: 1.5rem;
+  font-family: "Roboto", sans-serif;
+}
+.search-input:active {
+  border: 0;
+}
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  margin: 1rem;
+}
+.search-icon {
+  margin-right: 1rem;
+  height: 1.5rem;
+  color: #777;
+  padding-left: 1rem;
+}
+.message-icons {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  margin-right: 4rem;
+  gap: 2rem;
+}
+.message-icons img {
+  height: 3rem;
+  width: 3rem;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 10px #d58cfc;
+}
+.sidebar {
+  position: sticky;
+  top: 10%;
+  width: 10rem;
+  height: 80%;
+  display: flex;
+  padding: 7rem 0;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-top-right-radius: 10rem;
+  border-bottom-right-radius: 10rem;
+  background: linear-gradient(to bottom, rgb(155, 21, 21), rgb(222, 114, 132));
+}
+.sidebar-container {
+  position: relative;
+  top: 1rem;
+}
+.sidebar-icon {
+  color: white;
+}
+.outer {
+  display: flex;
+  width: 100vw;
+  gap: 3rem;
+  height: 100vh;
+}
+.introduction img {
+  height: 13rem;
+  width: 13rem;
+  object-fit: cover;
+  border-radius: 6.5rem;
+  margin-right: 2rem;
+}
+.introduction {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  // border: 1px solid black;
+  box-shadow: 0px 0px 10px 4px rgba(128, 128, 128, 0.15);
+  border-bottom: 0;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  margin-right: 4rem;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  grid-column-end: span 2;
+}
+.introduction p {
+  font-size: 1.7rem;
+  padding-right: 1rem;
+}
+h3 {
+  font-size: 2.5rem;
+  padding: 0.5rem 0;
+}
+#description {
+  margin-bottom: 1rem;
+  color: gray;
+  font-size: 1.7rem;
+}
+.services-container h3 {
+  text-align: center;
+  background-color: #f38078;
+  color: white;
+  font-weight: 400;
+}
+
+.card-heading {
+  display: flex;
+  justify-content: space-between;
+}
+.card-heading h5 {
+  margin-bottom: 0.5rem;
+}
+.card {
+  // margin: 2rem;
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 10px 4px rgba(128, 128, 128, 0.15);
+}
+.card p {
+  font-size: 1.7rem;
+}
+.services-container {
+  // border: 1px solid black;
+  box-shadow: 0px 0px 10px 4px rgba(128, 128, 128, 0.15);
+  margin-right: 4rem;
+  grid-column-end: span 2;
+  height: 35vh;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  margin-right: 2rem;
+}
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow-y: scroll;
+  height: 70%;
+  gap: 2rem;
+  padding: 2rem;
+}
+.services::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+.services::-webkit-scrollbar-track {
+  background: white;
+  border-left: 1px solid rgba(128, 128, 128, 0.15);
+}
+
+.services::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 5rem;
+}
+.services::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 166, 0, 0.577);
+}
+.resources h5 {
+  text-align: center;
+  background-color: #f38078;
+  color: white;
+  font-weight: 400;
+  padding: 0.5rem 0;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+}
+.resources {
+  margin-top: 3rem;
+  border-radius: 3.8rem;
+  width: 95%;
+  margin-bottom: 3rem;
+  height: 35vh;
+  grid-area: span 1;
+  box-shadow: 0px 0px 10px 4px rgba(128, 128, 128, 0.15);
+}
+////selected card color: #FF8911
+.reviews h5 {
+  text-align: center;
+  background-color: #f38078;
+  color: white;
+  padding: 0.5rem 0;
+  font-weight: 400;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+}
+.reviews {
+  margin-top: 3rem;
+  border-radius: 3.8rem;
+  margin-right: 4rem;
+  height: 35vh;
+  margin-bottom: 3rem;
+  box-shadow: 0px 0px 10px 4px rgba(128, 128, 128, 0.15);
+}
+.resource-cards {
+  // margin: 2rem;
+  padding: 2rem 2rem;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 75%;
+}
+.resource-cards::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+.resource-cards::-webkit-scrollbar-track {
+  background: white;
+  border-left: 1px solid rgba(128, 128, 128, 0.15);
+}
+
+.resource-cards::-webkit-scrollbar-thumb {
+  background: orange;
+  border-radius: 5rem;
+}
+.resource-cards::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 166, 0, 0.577);
+}
+.resource-card {
+  padding: 1rem 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0px 0px 10px 4px rgba(128, 128, 128, 0.15);
+}
+.resource-card p {
+  font-size: 1.7rem;
+}
+.resource-card h6,
+.review-card h6 {
+  margin-bottom: 1rem;
+}
+.review-card img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 4rem;
+  object-fit: cover;
+  margin-right: 2rem;
+}
+.review-card {
+  display: flex;
+  margin: 2rem;
+  padding-top: 1rem;
+}
+#content {
+  font-size: 1.7rem;
+}
+#rating {
+  display: flex;
+  justify-content: space-between;
+}
+#rating p {
+  font-size: 1.5rem;
+}
+.button {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 4rem;
+  margin-bottom: 4rem;
+  margin-top: 1.5rem;
+}
+.button button {
+  background: linear-gradient(to right, rgb(155, 21, 21), rgb(222, 114, 132));
+  color: white;
+  padding: 1rem 0;
+  font-weight: 400;
+  font-size: 2rem;
+  border-radius: 2rem;
+  border: none;
+  width: 20rem;
+}
+.selected {
+  background-color: rgb(240, 153, 32);
+  color: white;
+  #description {
+    color: white;
+  }
+}
+#selected {
+  background-color: rgb(254, 173, 60);
+  padding: 0.5rem 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.15);
+}
