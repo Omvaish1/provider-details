@@ -8,20 +8,15 @@ import { Introduction } from "./Introduction";
 export default function App() {
   return (
     <div className="app">
-      <div>
-        <Header />
-        <div className="outer">
-          <Sidebar />
-          <div className="inner">
-            <Introduction />
-            <Services />
-            <Resources />
-            <Reviews />
-          </div>
+      <Header />
+      <div className="outer">
+        <Sidebar />
+        <div className="inner">
+          <Introduction />
+          <Services />
+          <Resources />
+          <Reviews />
         </div>
-      </div>
-      <div className="button">
-        <button>Book Now</button>
       </div>
     </div>
   );
